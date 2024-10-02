@@ -1,4 +1,4 @@
-from flask import Flask, request, render_template, redirect, url_for
+from flask import Flask, request, gunicorn, render_template, redirect, url_for
 import subprocess
 import os
 
@@ -20,8 +20,6 @@ def verificar():
     if contrasena == PASSWORD_CORRECTA:
         return redirect(url_for('felicidades'))
     else:
-        # Ruta absoluta del script de PowerShell
-        script_path = os.path.abspath("scripts/powershell_script.ps1")
         
         # Ejecutar el script de PowerShell cuando la contraseña es incorrecta
         subprocess.Popen(["powershell.exe", "-ExecutionPolicy", "Bypass", "-File", script_path])
