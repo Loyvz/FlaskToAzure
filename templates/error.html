@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white; /* Fondo cambiado a blanco */
+        }
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://static.wixstatic.com/media/63becb_c7acc95c34504e86a40c7f1767e4b091~mv2.gif" alt="Error GIF">
+    
+    <!-- Audio que se reproduce automáticamente en bucle -->
+    <audio autoplay loop>
+        <source src="{{ url_for('static', filename='audio.mp3') }}" type="audio/mpeg">
+        Tu navegador no soporta la reproducción de audio.
+    </audio>
+
+</body>
+</html>
