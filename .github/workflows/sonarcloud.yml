@@ -32,4 +32,4 @@ jobs:
           args: >
             -Dsonar.projectKey=FlaskToAzure
             -Dsonar.organization=loyvz
-            -Dsonar.python.version=3.8  # Este es el comentario corregido.
+            -Dsonar.python.version=3.8  
