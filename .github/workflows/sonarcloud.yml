@@ -17,7 +17,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
-          python-version: '3.8'  # Cambia según la versión de Python que estés utilizando
+          python-version: '3.8'  # Comentario correcto: la versión debe coincidir
 
       - name: Install dependencies
         run: |
@@ -32,4 +32,4 @@ jobs:
           args: >
             -Dsonar.projectKey=FlaskToAzure
             -Dsonar.organization=loyvz
-            -Dsonar.python.version=3.8  # Asegúrate de que coincida con la versión de Python
+            -Dsonar.python.version=3.8  # Este es el comentario corregido.
