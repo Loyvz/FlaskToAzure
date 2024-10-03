@@ -17,7 +17,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
-          python-version: '3.8'  # Cambia según la versión de Python que uses
+          python-version: '3.8'  # Cambia según la versión de Python que estés utilizando
 
       - name: Install dependencies
         run: |
@@ -32,5 +32,4 @@ jobs:
           args: >
             -Dsonar.projectKey=FlaskToAzure
             -Dsonar.organization=loyvz
-            -Dsonar.host.url=https://sonarcloud.io
             -Dsonar.python.version=3.8  # Asegúrate de que coincida con la versión de Python
